@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
-// import { Container } from './styles';
+import Sessions from "./screens/Sessions";
 
 export default function Router() {
-  return <div />;
+  return (
+    <BrowserRouter>
+      <Route path="/" exact component={Sessions} />
+    </BrowserRouter>
+  );
 }
